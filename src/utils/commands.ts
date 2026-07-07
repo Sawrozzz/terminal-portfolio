@@ -112,7 +112,7 @@ function handleSkills(_args: string[], _ctx: CmdContext): CmdResult {
   const lines: OutputLine[] = [
     { text: '', type: 'stdout' },
     { text: '  ╔═══════════════════════════════════════════════════════╗', type: 'stdout' },
-    { text: '  ║             TECHNICAL  SKILLS  MATRIX               ║', type: 'stdout' },
+    { text: '  ║             TECHNICAL  SKILLS  MATRIX                 ║', type: 'stdout' },
     { text: '  ╚═══════════════════════════════════════════════════════╝', type: 'stdout' },
     { text: '', type: 'stdout' },
     { text: '  Languages & Runtimes', type: 'stdout' },
@@ -143,7 +143,7 @@ function handleProjects(_args: string[], _ctx: CmdContext): CmdResult {
   const lines: OutputLine[] = [
     { text: '', type: 'stdout' },
     { text: '  ╔════════════════════════════════════════════════════════╗', type: 'stdout' },
-    { text: '  ║                   PROJECT  SHOWCASE                  ║', type: 'stdout' },
+    { text: '  ║                   PROJECT  SHOWCASE                    ║', type: 'stdout' },
     { text: '  ╚════════════════════════════════════════════════════════╝', type: 'stdout' },
     { text: '', type: 'stdout' },
     { text: '  [1] Terminal Portfolio', type: 'stdout' },
@@ -172,7 +172,7 @@ function handleContact(_args: string[], _ctx: CmdContext): CmdResult {
   const lines: OutputLine[] = [
     { text: '', type: 'stdout' },
     { text: '  ╔═══════════════════════════════════════════╗', type: 'stdout' },
-    { text: '  ║          CONTACT  INFORMATION            ║', type: 'stdout' },
+    { text: '  ║          CONTACT  INFORMATION             ║', type: 'stdout' },
     { text: '  ╚═══════════════════════════════════════════╝', type: 'stdout' },
     { text: '', type: 'stdout' },
     { text: '    Email:     sawroz@engineer.com', type: 'stdout' },

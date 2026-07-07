@@ -571,17 +571,6 @@ export default function Terminal() {
                   caretColor: currentTheme.promptColor,
                 }}
               />
-              {/* Blinking cursor indicator */}
-              <span
-                className="terminal-cursor"
-                style={{
-                  backgroundColor: currentTheme.promptColor,
-                  marginLeft: '2px',
-                  width: '8px',
-                  height: '16px',
-                  flexShrink: 0,
-                }}
-              />
             </div>
           )}
 

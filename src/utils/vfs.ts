@@ -16,44 +16,44 @@ export interface VFSDirectory {
 export type VFSNode = VFSFile | VFSDirectory;
 
 export const INITIAL_VFS: VFSDirectory = {
-  type: 'dir',
-  name: '/',
+  type: "dir",
+  name: "/",
   children: {
     bin: {
-      type: 'dir',
-      name: 'bin',
+      type: "dir",
+      name: "bin",
       children: {
         neofetch: {
-          type: 'file',
-          name: 'neofetch',
+          type: "file",
+          name: "neofetch",
           content: 'echo "Simulated system specifications utility."',
           isExecutable: true,
         },
         editor: {
-          type: 'file',
-          name: 'editor',
+          type: "file",
+          name: "editor",
           content: 'echo "Visual text editor utility."',
           isExecutable: true,
         },
         sudo: {
-          type: 'file',
-          name: 'sudo',
+          type: "file",
+          name: "sudo",
           content: 'echo "Superuser run utility."',
           isExecutable: true,
         },
       },
     },
     home: {
-      type: 'dir',
-      name: 'home',
+      type: "dir",
+      name: "home",
       children: {
         sawroz: {
-          type: 'dir',
-          name: 'sawroz',
+          type: "dir",
+          name: "sawroz",
           children: {
-            'welcome.txt': {
-              type: 'file',
-              name: 'welcome.txt',
+            "welcome.txt": {
+              type: "file",
+              name: "welcome.txt",
               content: `===================================================================
 *  __                  _             _ _                      _   *
 * / _|                (_)           | (_)                    | |  *
@@ -76,9 +76,9 @@ You can edit files with 'vi <filename>' or 'nano <filename>'.
 Can you find the hidden root files? Try to gain 'sudo' access...
 `,
             },
-            'about.md': {
-              type: 'file',
-              name: 'about.md',
+            "about.md": {
+              type: "file",
+              name: "about.md",
               content: `# About Me
 
 Hello! I'm Sawroz, a passionate Systems & Full-stack Software Engineer based in the digital realm.
@@ -96,66 +96,59 @@ Use 'cd skills' or 'cat contact.txt' to discover more!
 `,
             },
             skills: {
-              type: 'dir',
-              name: 'skills',
+              type: "dir",
+              name: "skills",
               children: {
-                'languages.txt': {
-                  type: 'file',
-                  name: 'languages.txt',
+                "languages.txt": {
+                  type: "file",
+                  name: "languages.txt",
                   content: `[Languages & Runtimes]
 - TypeScript/JavaScript (Advanced) [██████████████████░░] 90%
-- Go (Proficient)                  [██████████████░░░░░░] 70%
 - Python (Proficient)              [████████████████░░░░] 80%
 - C++ (Prior Experience)           [██████████░░░░░░░░░░] 50%
 - Shell/Bash/Zsh (Advanced)         [██████████████████░░] 90%
 - SQL / NoSQL                      [████████████████░░░░] 80%`,
                 },
-                'frontend.txt': {
-                  type: 'file',
-                  name: 'frontend.txt',
+                "frontend.txt": {
+                  type: "file",
+                  name: "frontend.txt",
                   content: `[Frontend Stack]
 - React.js / Next.js              [██████████████████░░] 90%
 - Redux Toolkit / Zustand          [████████████████░░░░] 80%
 - Tailwind CSS / Radix UI          [████████████████████] 100%
 - HTML5 / CSS3 / ESNext            [████████████████████] 100%
-- Webpack / Vite / Turbopack       [████████████████░░░░] 80%
-- WebSockets / WebRTC              [████████████░░░░░░░░] 60%`,
+- Webpack / Vite / Turbopack       [████████████████░░░░] 80%`
                 },
-                'backend.txt': {
-                  type: 'file',
-                  name: 'backend.txt',
+                "backend.txt": {
+                  type: "file",
+                  name: "backend.txt",
                   content: `[Backend & Datastores]
 - Node.js / Express / Fastify      [██████████████████░░] 90%
-- Go Gin / Fiber                   [██████████████░░░░░░] 70%
 - PostgreSQL / MySQL               [████████████████░░░░] 80%
 - MongoDB / Redis (Caching)        [████████████████░░░░] 80%
-- gRPC / Protocol Buffers          [██████████░░░░░░░░░░] 50%
 - RESTful API Architecture         [██████████████████░░] 90%`,
                 },
-                'devops.txt': {
-                  type: 'file',
-                  name: 'devops.txt',
+                "devops.txt": {
+                  type: "file",
+                  name: "devops.txt",
                   content: `[DevOps & Systems]
-- Docker / Docker Compose          [██████████████████░░] 90%
+- Docker / Docker Compose          [███████████░░░░░░░░░] 50%
 - Linux System Administration      [████████████████░░░░] 80%
-- Git / GitHub Actions (CI/CD)     [██████████████████░░] 90%
-- AWS (S3, EC2, ECS, Lambda)       [██████████████░░░░░░] 70%
-- Nginx / Reverse Proxies          [████████████████░░░░] 80%
-- Kubernetes (Basics)              [██████████░░░░░░░░░░] 50%`,
+- Git / GitHub Actions (CI/CD)     [██████████████████░░] 90%`,
                 },
               },
             },
             projects: {
-              type: 'dir',
-              name: 'projects',
+              type: "dir",
+              name: "projects",
               children: {
-                'terminal-portfolio': {
-                  type: 'dir',
-                  name: 'terminal-portfolio',
+                "terminal-portfolio": {
+                  type: "dir",
+                  name: "terminal-portfolio",
                   children: {
-                    'readme.md': {
-                      type: 'file',
-                      name: 'readme.md',
+                    "readme.md": {
+                      type: "file",
+                      name: "readme.md",
                       content: `# Terminal Portfolio
 
 An interactive, responsive retro terminal application mimicking a standard Linux shell.
@@ -175,20 +168,21 @@ An interactive, responsive retro terminal application mimicking a standard Linux
 * Tailwind CSS
 * Vite (Fast HMR bundler)`,
                     },
-                    'run.sh': {
-                      type: 'file',
-                      name: 'run.sh',
-                      content: '#!/bin/bash\necho "Starting Terminal Portfolio locally..."\nnpm run dev\necho "Running on http://localhost:5173"',
+                    "run.sh": {
+                      type: "file",
+                      name: "run.sh",
+                      content:
+                        '#!/bin/bash\necho "Starting Terminal Portfolio locally..."\nnpm run dev\necho "Running on http://localhost:5173"',
                     },
                   },
                 },
-                'e-commerce-engine': {
-                  type: 'dir',
-                  name: 'e-commerce-engine',
+                "e-commerce-engine": {
+                  type: "dir",
+                  name: "e-commerce-engine",
                   children: {
-                    'details.txt': {
-                      type: 'file',
-                      name: 'details.txt',
+                    "details.txt": {
+                      type: "file",
+                      name: "details.txt",
                       content: `Project: E-Commerce Microservices Engine
 Status: Production Ready
 Role: Lead Backend Engineer
@@ -205,13 +199,13 @@ A highly scalable backend engine modeled around a microservices architecture.
                     },
                   },
                 },
-                'proxmox-homelab': {
-                  type: 'dir',
-                  name: 'proxmox-homelab',
+                "proxmox-homelab": {
+                  type: "dir",
+                  name: "proxmox-homelab",
                   children: {
-                    'specs.txt': {
-                      type: 'file',
-                      name: 'specs.txt',
+                    "specs.txt": {
+                      type: "file",
+                      name: "specs.txt",
                       content: `Project: Custom Homelab Server
 Status: Active, 99.9% Uptime
 
@@ -234,9 +228,9 @@ A mini-datacenter in my closet running virtualization and storage networks.
                 },
               },
             },
-            'contact.txt': {
-              type: 'file',
-              name: 'contact.txt',
+            "contact.txt": {
+              type: "file",
+              name: "contact.txt",
               content: `You can reach out to me through any of the following ports:
 
 - Email:     sawroz@engineer.com
@@ -253,12 +247,12 @@ Or try using the 'contact' command in this terminal to drop a direct message!
       },
     },
     etc: {
-      type: 'dir',
-      name: 'etc',
+      type: "dir",
+      name: "etc",
       children: {
         motd: {
-          type: 'file',
-          name: 'motd',
+          type: "file",
+          name: "motd",
           content: `
 Welcome to SAWROZ OS v1.0.4-LTS (x86_64-pc-linux-gnu)
 
@@ -271,26 +265,27 @@ Have fun exploring the file system. Try 'sudo -s' if you dare.
 `,
         },
         passwd: {
-          type: 'file',
-          name: 'passwd',
-          content: 'root:x:0:0:root:/root:/bin/bash\nsawroz:x:1000:1000:Sawroz,,,:/home/sawroz:/bin/bash\nguest:x:1001:1001:Guest,,,:/home/sawroz:/bin/bash',
+          type: "file",
+          name: "passwd",
+          content:
+            "root:x:0:0:root:/root:/bin/bash\nsawroz:x:1000:1000:Sawroz,,,:/home/sawroz:/bin/bash\nguest:x:1001:1001:Guest,,,:/home/sawroz:/bin/bash",
         },
-        'secret.txt': {
-          type: 'file',
-          name: 'secret.txt',
+        "secret.txt": {
+          type: "file",
+          name: "secret.txt",
           content: 'Error: Access Denied. Only user "root" can view this file.',
           requiredSudo: true,
         },
       },
     },
     root: {
-      type: 'dir',
-      name: 'root',
+      type: "dir",
+      name: "root",
       requiredSudo: true,
       children: {
-        'root_secret.md': {
-          type: 'file',
-          name: 'root_secret.md',
+        "root_secret.md": {
+          type: "file",
+          name: "root_secret.md",
           content: `# CONGRATULATIONS ROOT USER! 🚩
 
 You have successfully escalated privileges and gained root access to this system!
@@ -311,16 +306,16 @@ Send this token to sawroz@engineer.com and let's grab a coffee or talk systems!
       },
     },
     var: {
-      type: 'dir',
-      name: 'var',
+      type: "dir",
+      name: "var",
       children: {
         log: {
-          type: 'dir',
-          name: 'log',
+          type: "dir",
+          name: "log",
           children: {
-            'auth.log': {
-              type: 'file',
-              name: 'auth.log',
+            "auth.log": {
+              type: "file",
+              name: "auth.log",
               content: `Jul  6 10:14:22 sawroz-server sshd[38294]: Server listening on 0.0.0.0 port 22.
 Jul  6 10:15:01 sawroz-server CRON[38302]: pam_unix(cron:session): session opened for user root by (uid=0)
 Jul  6 12:43:55 sawroz-server sshd[39241]: Invalid user admin from 198.51.100.12 port 48218
